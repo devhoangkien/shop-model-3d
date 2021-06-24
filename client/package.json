@@ -1,0 +1,76 @@
+{
+  "name": "anafiya",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.1",
+    "@headlessui/react": "^0.3.2",
+    "@react-three/drei": "^6.2.2",
+    "@react-three/fiber": "^7.0.1",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/line-clamp": "^0.2.0",
+    "@tailwindcss/typography": "^0.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "firebase": "^8.3.2",
+    "framer-motion": "^4.1.3",
+    "history": "^5.0.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-colorful": "^5.2.2",
+    "react-dom": "^17.0.2",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-helmet": "^6.1.0",
+    "react-hot-toast": "^1.0.2",
+    "react-id-swiper": "^3.0.0",
+    "react-moment": "^1.1.1",
+    "react-paginate": "^7.1.2",
+    "react-redux": "^7.2.3",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "^6.0.0-alpha.5",
+    "react-scripts": "4.0.3",
+    "react-stripe-checkout": "^2.6.3",
+    "react-three": "^0.9.7",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "swiper": "^5.3.6",
+    "three": "^0.129.0",
+    "valtio": "^1.0.6",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
+  }
+}
