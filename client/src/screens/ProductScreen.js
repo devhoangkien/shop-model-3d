@@ -97,7 +97,7 @@ const ProductScreen = () => {
           <h2 className="text-4xl md:text-5xl text-gray-700 mt-5 mb-3">
             {product?.name}
           </h2>
-          gy
+
           <div className="divide-y-2 divide-gray-100">
             <div className="flex items-center space-x-5">
               <Rating value={product?.rating} />
@@ -105,14 +105,14 @@ const ProductScreen = () => {
                 {product?.numReviews} Reviews
               </span>
             </div>
-            <div className="flex items-center space-x-5 mt-5 pt-5 mb-7">
+            {/* <div className="flex items-center space-x-5 mt-5 pt-5 mb-7">
               <h3 className="text-2xl md:text-3xl">${product?.price}</h3>
               <StockAlert inStock={product?.countInStock > 0} />
-            </div>
+            </div> */}
           </div>
           <p className="text-gray-500 prose">{product?.description}</p>
           <div className="flex md:flex-row flex-col md:items-center space-y-5 md:space-y-0 md:space-x-5 mt-10">
-            {product?.countInStock > 0 && (
+            {/* {product?.countInStock > 0 && (
               <div className="space-x-3">
                 <span className="font-semibold">Quantity</span>
                 <select
@@ -128,8 +128,8 @@ const ProductScreen = () => {
                   ))}
                 </select>
               </div>
-            )}
-            <button
+            )} */}
+            {/* <button
               className={`${
                 product?.countInStock === 0 && "opacity-50 pointer-events-none"
               } w-40 bg-purple-900 focus:outline-none focus:ring-4 focus:ring-purple-200 text-white px-5 py-2 rounded-md transition-shadow duration-300`}
@@ -137,7 +137,13 @@ const ProductScreen = () => {
               onClick={addToCartHandler}
             >
               Add to cart
-            </button>
+            </button> */}
+            <a
+              className=" bg-purple-900 focus:outline-none focus:ring-4 focus:ring-purple-200 text-white px-5 py-2 rounded-md transition-shadow duration-300"
+              href={product?.model}
+            >
+              Download Models
+            </a>
           </div>
         </motion.div>
       </div>

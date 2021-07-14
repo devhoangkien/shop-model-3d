@@ -1,0 +1,26 @@
+@import url("https://rsms.me/inter/inter.css");
+
+.name_shoe {
+  position: absolute;
+  top: 100px;
+  left: 360px;
+  padding: 0;
+  margin: 40px;
+  font-size: 3em;
+  line-height: 0.7em;
+  letter-spacing: -6px;
+  color: #272730;
+}
+
+.canvas{
+    height: 500px !important;
+} 
+
+
+.picker {
+  position: absolute !important;
+  top: 150px;
+  left: 300px;
+  width: 90px !important;
+  height: 90px !important;
+}

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.card-model {
+  height: 200px!important;
+  max-height: 200px;
+  width: 300px!important;
+}

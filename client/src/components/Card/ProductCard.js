@@ -54,48 +54,7 @@ const ProductCard = ({ product, i }) => {
           </small>
         </div>
       </div>
-      <div className='flex justify-between items-center px-5 py-3 border-t border-dotted'>
-        <h3 className='text-base text-yellow-700'>${product?.price}</h3>
-        {product?.countInStock > 0 ? (
-          <button
-            className='text-blue-900 hover:underline focus:outline-none font-semibold flex items-center space-x-2'
-            title='Add to cart'
-            // disabled={product?.countInStock === 0}
-            onClick={() => {
-              if (product?.countInStock === 0) {
-                toast.error('Out of stock');
-              } else {
-                dispatch(addToCart(product?._id, 1));
-                toast.success('Added to cart');
-              }
-            }}
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-              className='w-7'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z'
-              />
-            </svg>
-            <small>Add to cart</small>
-          </button>
-        ) : (
-          <span className='relative inline-block px-3 py-1 font-semibold text-red-800 leading-tight'>
-            <span
-              aria-hidden
-              className='absolute inset-0 bg-red-200 opacity-50 rounded-full'
-            ></span>
-            <span className='relative text-xs'>Out of stock</span>
-          </span>
-        )}
-      </div>
+     
       <Helmet>
         <script type="module" src="/model-viewer.js"></script>
         {/* <script>`try{Typekit.load({ async: true })}catch(e){}`</script> */}

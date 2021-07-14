@@ -34,24 +34,21 @@ export const getProductById = asyncHandler(async (req, res) => {
 export const createProduct = asyncHandler(async (req, res) => {
   const {
     name,
-    price,
+    
     description,
     image,
     model,
-    brand,
+   
     category,
-    countInStock,
+    
   } = req.body;
 
   const product = new Product({
     user: req.user._id,
     name,
-    price,
     image,
     model,
-    brand,
     category,
-    countInStock,
     description,
   });
 
@@ -64,26 +61,20 @@ export const createProduct = asyncHandler(async (req, res) => {
 export const updateProduct = asyncHandler(async (req, res) => {
   const {
     name,
-    price,
     description,
     image,
     model,
-    brand,
     category,
-    countInStock,
   } = req.body;
 
   const product = await Product.findById(req.params.id);
 
   if (product) {
     product.name = name;
-    product.price = price;
     product.description = description;
     product.image = image;
     product.model = model;
-    product.brand = brand;
     product.category = category;
-    product.countInStock = countInStock;
 
     const updatedProduct = await product.save();
 

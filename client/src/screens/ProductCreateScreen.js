@@ -18,14 +18,11 @@ const ProductCreateScreen = () => {
     useSelector((state) => state.productCreate);
 
   const [name, setName] = useState("");
-  const [price, setPrice] = useState(0);
   const [image, setImage] = useState(
     "https://res.cloudinary.com/muttakinhasib/image/upload/v1618421868/products/woocommerce-placeholder-600x600_rnyd9c.png"
   );
   const [model, setModel] = useState("");
-  const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
-  const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
 
   useEffect(() => {
@@ -105,13 +102,10 @@ const ProductCreateScreen = () => {
     dispatch(
       createProduct({
         name,
-        price,
         description,
         image,
         model,
-        brand,
         category,
-        countInStock,
       })
     );
   };
@@ -213,25 +207,7 @@ const ProductCreateScreen = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-5">
-            <div className="w-full">
-              <label
-                htmlFor="brand"
-                className="font-semibold text-gray-700 block pb-2"
-              >
-                Brand
-              </label>
-              <div className="flex">
-                <input
-                  id="brand"
-                  name="brand"
-                  className="text-gray-600 px-4 rounded-md bg-gray-100 w-full border-gray-300"
-                  type="text"
-                  value={brand}
-                  placeholder="Enter product brand"
-                  onChange={(e) => setBrand(e.target.value)}
-                />
-              </div>
-            </div>
+            
             <div className="w-full">
               <label
                 htmlFor="category"
@@ -252,46 +228,7 @@ const ProductCreateScreen = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-5">
-            <div className="w-full">
-              <label
-                htmlFor="price"
-                className="font-semibold text-gray-700 block pb-2"
-              >
-                Price
-              </label>
-              <div className="flex">
-                <input
-                  id="price"
-                  name="price"
-                  className="text-gray-600 px-4 rounded-md bg-gray-100 w-full border-gray-200"
-                  type="text"
-                  value={price}
-                  placeholder="Enter product price"
-                  onChange={(e) => setPrice(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="w-full">
-              <label
-                htmlFor="countInStock"
-                className="font-semibold text-gray-700 block pb-2"
-              >
-                Count in Stock
-              </label>
-              <div className="flex">
-                <input
-                  id="countInStock"
-                  name="countInStock"
-                  className="text-gray-600 px-4 rounded-md bg-gray-100 w-full border-gray-200"
-                  type="text"
-                  value={countInStock}
-                  placeholder="Product count in stock"
-                  onChange={(e) => setCountInStock(e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
+          
           <div className="w-full">
             <label
               htmlFor="description"

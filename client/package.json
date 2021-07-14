@@ -35,11 +35,12 @@
     "react-scripts": "4.0.3",
     "react-stripe-checkout": "^2.6.3",
     "react-three": "^0.9.7",
-    "redux": "^4.0.5",
+    "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "swiper": "^5.3.6",
-    "three": "^0.129.0",
+    "three": "^0.130.1",
+    "typescript": "^4.3.5",
     "valtio": "^1.0.6",
     "web-vitals": "^1.0.1"
   },
@@ -69,8 +70,9 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.4",
+    "@types/three": "^0.130.0",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
 }
