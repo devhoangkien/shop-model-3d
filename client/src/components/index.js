@@ -7,3 +7,4 @@ export { default as CheckoutSteps } from "./CheckoutSteps";
 export { default as Alert } from "./Alert";
 export { default as NavLink } from "./NavLink";
 export { default as Banner } from "./Banner";
+export { default as Footer } from "./Footer";

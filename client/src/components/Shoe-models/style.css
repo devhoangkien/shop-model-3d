@@ -3,7 +3,7 @@
 .name_shoe {
   position: absolute;
   top: 100px;
-  left: 360px;
+  left: 160px;
   padding: 0;
   margin: 40px;
   font-size: 3em;
@@ -13,14 +13,14 @@
 }
 
 .canvas{
-    height: 500px !important;
+    height: 400px !important;
 } 
 
 
 .picker {
   position: absolute !important;
   top: 150px;
-  left: 300px;
+  left: 100px;
   width: 90px !important;
   height: 90px !important;
 }

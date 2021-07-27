@@ -4,6 +4,8 @@ import { Toaster } from "react-hot-toast";
 import { AnimatePresence } from "framer-motion";
 
 import { Header } from "./components";
+import { Footer } from "./components";
+
 import Container from "./components/Container";
 import {
   CartScreen,
@@ -88,6 +90,7 @@ function App() {
           </AnimatePresence>
         </Container>
       </main>
+      <Footer />
     </Router>
   );
 }
