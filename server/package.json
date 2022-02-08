@@ -1,7 +1,7 @@
 {
   "name": "anafiya",
   "version": "1.0.0",
-  "description": "MERN E-commerce Islamic Shop",
+  "description": "MERN shop model 3d",
   "main": "server",
   "type": "module",
   "scripts": {
@@ -17,7 +17,7 @@
   "keywords": [
     "anafiya"
   ],
-  "author": "Hasib Molla",
+  "author": "devhoangkien",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
